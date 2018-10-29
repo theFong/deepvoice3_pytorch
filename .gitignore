@@ -12,6 +12,7 @@ data
 text
 datasets
 testout
+venv
 
 # Created by https://www.gitignore.io
 
