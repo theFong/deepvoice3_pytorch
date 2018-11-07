@@ -180,15 +180,15 @@ To deal with the problem, `gentle_web_align.py` will
 Preliminary results show that while HTK/festival/merlin-based method in `vctk_preprocess/prepare_vctk_labels.py` works better on VCTK, Gentle is more stable with audio clips with ambient noise. (e.g. movie excerpts)
 
 Usage:
-(Assuming Gentle is running at `localhost:8567` (Default when not specified))
+(Assuming Gentle is running at `localhost:8765` (Default when not specified))
 1. When sound file and transcript files are saved in separate folders. (e.g. sound files are at `datasetA/wavs` and transcripts are at `datasetA/txts`)
 ```
-python gentle_web_align.py -w "datasetA/wavs/*.wav" -t "datasetA/txts/*.txt" --server_addr=localhost --port=8567
+python gentle_web_align.py -w "datasetA/wavs/*.wav" -t "datasetA/txts/*.txt" --server_addr=localhost --port=8765
 ```
 
 2. When sound file and transcript files are saved in nested structure. (e.g. `datasetB/speakerN/blahblah.wav` and `datasetB/speakerN/blahblah.txt`)
 ```
-python gentle_web_align.py --nested-directories="datasetB" --server_addr=localhost --port=8567
+python gentle_web_align.py --nested-directories="datasetB" --server_addr=localhost --port=8765
 ```
 **Once you have phoneme alignment for each utterance, you can extract features by running `preprocess.py`**
 

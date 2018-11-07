@@ -13,6 +13,7 @@ text
 datasets
 testout
 venv
+.vscode
 
 # Created by https://www.gitignore.io
 
