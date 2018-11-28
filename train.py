@@ -60,7 +60,7 @@ from hparams import hparams, hparams_debug_string
 fs = hparams.sample_rate
 
 # Prevent Issue #5
-plt.switch_backend('Qt5Agg')
+#plt.switch_backend('Qt5Agg')
 
 global_step = 0
 global_epoch = 0
